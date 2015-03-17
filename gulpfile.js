@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 gulp.task('browserify', function () {
   // get main.js file
-  gulp.src('./app/src/js/components/main.js') // like call it
+  gulp.src('./app/src/js/main.js') // like call it
       .pipe(browserify({ transform: 'reactify' }))
       .pipe(gulp.dest('./app/dist/js')); // change it
 });
